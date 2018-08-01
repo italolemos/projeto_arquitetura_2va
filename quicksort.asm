@@ -27,7 +27,7 @@ main:
 
 afficherEtat:
 	move $t0, $a0
-loop:
+loop: 
 	#if($a2 < $a1) break;
 	slt $t1, $a2, $a1		#$t1 = $a2 < $a1
 	bne $t1, $zero, endAfficherEtat	#if($t1) break;
